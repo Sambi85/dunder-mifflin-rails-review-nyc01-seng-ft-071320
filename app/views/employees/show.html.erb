@@ -6,4 +6,4 @@
 <%= image_tag @employee.img_url %>
 
 <h3>Dogs</h3>
-<p> <%= link_to @dog.name, dog_path(@employee.dog_id) %></p>
+<p> <%= link_to Dog.find(@employee.dog_id).name, dog_path(@employee.dog_id) %></p>
